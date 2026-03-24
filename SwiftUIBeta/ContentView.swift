@@ -863,23 +863,23 @@ struct ContentView: View {
         
         /*       DRAGGESTURE     */
         
-        RoundedRectangle(cornerRadius: 50)
-            .glassEffect(.clear.interactive())
-            .frame(width: 100, height: 100)
-            .offset(x: offset.width, y: offset.height)
-            .gesture(
-                DragGesture()
-                    .onChanged({ value in
-                        withAnimation(.bouncy) {
-                            offset = value.translation
-                        }
-                    })
-                            .onEnded({ value in
-                                withAnimation(.spring) {
-                                    offset = .zero
-                                }
-                            })
-                    )
+//        RoundedRectangle(cornerRadius: 50)
+//            .glassEffect(.clear.interactive())
+//            .frame(width: 100, height: 100)
+//            .offset(x: offset.width, y: offset.height)
+//            .gesture(
+//                DragGesture()
+//                    .onChanged({ value in
+//                        withAnimation(.bouncy) {
+//                            offset = value.translation
+//                        }
+//                    })
+//                            .onEnded({ value in
+//                                withAnimation(.spring) {
+//                                    offset = .zero
+//                                }
+//                            })
+//                    )
         
         /*      STATE/BINDING     */
         
@@ -1615,6 +1615,72 @@ struct ContentView: View {
 //                offsetY = -500
 //            }
 //        }
+        
+        /*      OVERLAY     */
+        
+//        Circle()
+//            .fill(.blue)
+//            .frame(width: 300)
+//            .overlay(alignment: .bottomTrailing) {
+//                Button {
+//                    print("Edit Profile Image")
+//                } label: {
+//                    HStack {
+//                        Image(systemName: "pencil.circle.fill")
+//                            .resizable()
+//                            .scaledToFit()
+//                            .tint(.black)
+//                            .frame(width: 70)
+//                    }
+//                }
+//            }
+        
+        ZStack {
+            RoundedRectangle(cornerRadius: 4)
+                .fill(.blue)
+                .overlay(alignment: .bottomTrailing) {
+                    Image(systemName: "figure.run")
+                        .resizable()
+                        .scaledToFill()
+                        .frame(width: 100, height: 240)
+                        .offset(x: -40)
+                }
+            HStack {
+                VStack(alignment: .leading) {
+                    Text("SWIFTUI")
+                        .fontWidth(.compressed)
+                        .foregroundColor(.white)
+                        .font(.system(size: 80, weight: .bold))
+                        .padding(.bottom, -40)
+                    Text("¡SUSCRIBETE AL\nCANAL DE SWIFTBETA!")
+                        .multilineTextAlignment(.center)
+                        .fontWidth(.compressed)
+                        .foregroundColor(.orange)
+                        .font(.system(size: 26, weight: .bold))
+                        .frame(width: 200, height: 100)
+                    Spacer()
+                    Text("SWIFTBETA")
+                        .fontWidth(.standard)
+                        .foregroundColor(.white)
+                        .font(.system(size: 18, weight: .bold))
+                    HStack(alignment: .lastTextBaseline) {
+                        Image(systemName: "applelogo")
+                            .font(.footnote)
+                            .foregroundColor(.white)
+                        Text("Mobile Developer")
+                            .fontWidth(.standard)
+                            .foregroundColor(.white)
+                            .fontWeight(.regular)
+                            .font(.system(size: 14))
+                    }
+                }
+                .padding(.leading, 12)
+                .padding(.top, 6)
+                Spacer()
+            }
+        }
+        .frame(height: 230)
+        .padding(.horizontal, 12)
         
     }
     
