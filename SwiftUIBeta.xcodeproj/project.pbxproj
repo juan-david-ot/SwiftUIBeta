@@ -14,6 +14,47 @@
 		3D9382302C57031B00977CF9 /* SwiftUIBetaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D93822F2C57031B00977CF9 /* SwiftUIBetaTests.swift */; };
 		3D93823A2C57031B00977CF9 /* SwiftUIBetaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9382392C57031B00977CF9 /* SwiftUIBetaUITests.swift */; };
 		3D93823C2C57031B00977CF9 /* SwiftUIBetaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D93823B2C57031B00977CF9 /* SwiftUIBetaUITestsLaunchTests.swift */; };
+		3D9D924B2D4AB9C200CAE9CD /* 5.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3D9D91D02D4AB9C100CAE9CD /* 5.wav */; };
+		3D9D924C2D4AB9C200CAE9CD /* 4.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3D9D91D12D4AB9C100CAE9CD /* 4.wav */; };
+		3D9D924D2D4AB9C200CAE9CD /* 1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3D9D91D22D4AB9C100CAE9CD /* 1.wav */; };
+		3D9D924E2D4AB9C200CAE9CD /* navigation_transition-left.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3D9D91D32D4AB9C100CAE9CD /* navigation_transition-left.wav */; };
+		3D9D924F2D4AB9C200CAE9CD /* alert_error-01.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3D9D91D42D4AB9C100CAE9CD /* alert_error-01.wav */; };
+		3D9D92502D4AB9C200CAE9CD /* alert_error-02.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3D9D91D52D4AB9C100CAE9CD /* alert_error-02.wav */; };
+		3D9D92512D4AB9C200CAE9CD /* navigation_unavailable-selection.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3D9D91D62D4AB9C100CAE9CD /* navigation_unavailable-selection.wav */; };
+		3D9D92522D4AB9C200CAE9CD /* 3.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3D9D91D72D4AB9C100CAE9CD /* 3.wav */; };
+		3D9D92532D4AB9C200CAE9CD /* 2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3D9D91D82D4AB9C100CAE9CD /* 2.wav */; };
+		3D9D92542D4AB9C200CAE9CD /* hero_decorative-celebration-03.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3D9D91DA2D4AB9C100CAE9CD /* hero_decorative-celebration-03.wav */; };
+		3D9D92552D4AB9C200CAE9CD /* hero_decorative-celebration-02.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3D9D91DB2D4AB9C100CAE9CD /* hero_decorative-celebration-02.wav */; };
+		3D9D92562D4AB9C200CAE9CD /* hero_decorative-celebration-01.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3D9D91DC2D4AB9C100CAE9CD /* hero_decorative-celebration-01.wav */; };
+		3D9D92572D4AB9C200CAE9CD /* hero_simple-celebration-01.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3D9D91DD2D4AB9C100CAE9CD /* hero_simple-celebration-01.wav */; };
+		3D9D92582D4AB9C200CAE9CD /* hero_simple-celebration-03.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3D9D91DE2D4AB9C100CAE9CD /* hero_simple-celebration-03.wav */; };
+		3D9D92592D4AB9C200CAE9CD /* hero_simple-celebration-02.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3D9D91DF2D4AB9C100CAE9CD /* hero_simple-celebration-02.wav */; };
+		3D9D925A2D4AB9C200CAE9CD /* notification_decorative-02.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3D9D91E12D4AB9C100CAE9CD /* notification_decorative-02.wav */; };
+		3D9D925B2D4AB9C200CAE9CD /* notification_ambient.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3D9D91E22D4AB9C100CAE9CD /* notification_ambient.wav */; };
+		3D9D925C2D4AB9C200CAE9CD /* notification_decorative-01.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3D9D91E32D4AB9C100CAE9CD /* notification_decorative-01.wav */; };
+		3D9D925D2D4AB9C200CAE9CD /* alert_simple.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3D9D91E42D4AB9C100CAE9CD /* alert_simple.wav */; };
+		3D9D925E2D4AB9C200CAE9CD /* alarm_gentle.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3D9D91E52D4AB9C100CAE9CD /* alarm_gentle.wav */; };
+		3D9D925F2D4AB9C200CAE9CD /* alert_high-intensity.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3D9D91E62D4AB9C100CAE9CD /* alert_high-intensity.wav */; };
+		3D9D92602D4AB9C200CAE9CD /* ringtone_minimal.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3D9D91E72D4AB9C100CAE9CD /* ringtone_minimal.wav */; };
+		3D9D92612D4AB9C200CAE9CD /* notification_simple-02.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3D9D91E82D4AB9C100CAE9CD /* notification_simple-02.wav */; };
+		3D9D92622D4AB9C200CAE9CD /* notification_simple-01.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3D9D91E92D4AB9C100CAE9CD /* notification_simple-01.wav */; };
+		3D9D92632D4AB9C200CAE9CD /* notification_high-intensity.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3D9D91EA2D4AB9C100CAE9CD /* notification_high-intensity.wav */; };
+		3D9D92642D4AB9C200CAE9CD /* ui_camera-shutter.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3D9D91EC2D4AB9C100CAE9CD /* ui_camera-shutter.wav */; };
+		3D9D92652D4AB9C200CAE9CD /* navigation_backward-selection-minimal.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3D9D91ED2D4AB9C100CAE9CD /* navigation_backward-selection-minimal.wav */; };
+		3D9D92662D4AB9C200CAE9CD /* ui_unlock.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3D9D91EE2D4AB9C100CAE9CD /* ui_unlock.wav */; };
+		3D9D92672D4AB9C200CAE9CD /* navigation_forward-selection.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3D9D91EF2D4AB9C100CAE9CD /* navigation_forward-selection.wav */; };
+		3D9D92682D4AB9C200CAE9CD /* navigation_backward-selection.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3D9D91F02D4AB9C100CAE9CD /* navigation_backward-selection.wav */; };
+		3D9D92692D4AB9C200CAE9CD /* ui_lock.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3D9D91F12D4AB9C100CAE9CD /* ui_lock.wav */; };
+		3D9D926A2D4AB9C200CAE9CD /* state-change_confirm-down.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3D9D91F22D4AB9C100CAE9CD /* state-change_confirm-down.wav */; };
+		3D9D926B2D4AB9C200CAE9CD /* ui_tap-variant-01.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3D9D91F32D4AB9C100CAE9CD /* ui_tap-variant-01.wav */; };
+		3D9D926C2D4AB9C200CAE9CD /* navigation_forward-selection-minimal.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3D9D91F42D4AB9C100CAE9CD /* navigation_forward-selection-minimal.wav */; };
+		3D9D926D2D4AB9C200CAE9CD /* ui_tap-variant-02.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3D9D91F52D4AB9C100CAE9CD /* ui_tap-variant-02.wav */; };
+		3D9D926E2D4AB9C200CAE9CD /* ui_tap-variant-03.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3D9D91F62D4AB9C100CAE9CD /* ui_tap-variant-03.wav */; };
+		3D9D926F2D4AB9C200CAE9CD /* state-change_confirm-up.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3D9D91F72D4AB9C100CAE9CD /* state-change_confirm-up.wav */; };
+		3D9D92702D4AB9C200CAE9CD /* ui_tap-variant-04.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3D9D91F82D4AB9C100CAE9CD /* ui_tap-variant-04.wav */; };
+		3D9D92712D4AB9C200CAE9CD /* navigation_selection-complete-celebration.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3D9D91F92D4AB9C100CAE9CD /* navigation_selection-complete-celebration.wav */; };
+		3D9D92722D4AB9C200CAE9CD /* navigation_hover-tap.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3D9D91FA2D4AB9C100CAE9CD /* navigation_hover-tap.wav */; };
+		3D9D92742D4E8A7300CAE9CD /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3D9D92732D4E8A7300CAE9CD /* Settings.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +85,47 @@
 		3D9382352C57031B00977CF9 /* SwiftUIBetaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUIBetaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D9382392C57031B00977CF9 /* SwiftUIBetaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIBetaUITests.swift; sourceTree = "<group>"; };
 		3D93823B2C57031B00977CF9 /* SwiftUIBetaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIBetaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3D9D91D02D4AB9C100CAE9CD /* 5.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 5.wav; sourceTree = "<group>"; };
+		3D9D91D12D4AB9C100CAE9CD /* 4.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 4.wav; sourceTree = "<group>"; };
+		3D9D91D22D4AB9C100CAE9CD /* 1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 1.wav; sourceTree = "<group>"; };
+		3D9D91D32D4AB9C100CAE9CD /* navigation_transition-left.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "navigation_transition-left.wav"; sourceTree = "<group>"; };
+		3D9D91D42D4AB9C100CAE9CD /* alert_error-01.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "alert_error-01.wav"; sourceTree = "<group>"; };
+		3D9D91D52D4AB9C100CAE9CD /* alert_error-02.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "alert_error-02.wav"; sourceTree = "<group>"; };
+		3D9D91D62D4AB9C100CAE9CD /* navigation_unavailable-selection.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "navigation_unavailable-selection.wav"; sourceTree = "<group>"; };
+		3D9D91D72D4AB9C100CAE9CD /* 3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 3.wav; sourceTree = "<group>"; };
+		3D9D91D82D4AB9C100CAE9CD /* 2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 2.wav; sourceTree = "<group>"; };
+		3D9D91DA2D4AB9C100CAE9CD /* hero_decorative-celebration-03.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "hero_decorative-celebration-03.wav"; sourceTree = "<group>"; };
+		3D9D91DB2D4AB9C100CAE9CD /* hero_decorative-celebration-02.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "hero_decorative-celebration-02.wav"; sourceTree = "<group>"; };
+		3D9D91DC2D4AB9C100CAE9CD /* hero_decorative-celebration-01.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "hero_decorative-celebration-01.wav"; sourceTree = "<group>"; };
+		3D9D91DD2D4AB9C100CAE9CD /* hero_simple-celebration-01.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "hero_simple-celebration-01.wav"; sourceTree = "<group>"; };
+		3D9D91DE2D4AB9C100CAE9CD /* hero_simple-celebration-03.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "hero_simple-celebration-03.wav"; sourceTree = "<group>"; };
+		3D9D91DF2D4AB9C100CAE9CD /* hero_simple-celebration-02.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "hero_simple-celebration-02.wav"; sourceTree = "<group>"; };
+		3D9D91E12D4AB9C100CAE9CD /* notification_decorative-02.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "notification_decorative-02.wav"; sourceTree = "<group>"; };
+		3D9D91E22D4AB9C100CAE9CD /* notification_ambient.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = notification_ambient.wav; sourceTree = "<group>"; };
+		3D9D91E32D4AB9C100CAE9CD /* notification_decorative-01.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "notification_decorative-01.wav"; sourceTree = "<group>"; };
+		3D9D91E42D4AB9C100CAE9CD /* alert_simple.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = alert_simple.wav; sourceTree = "<group>"; };
+		3D9D91E52D4AB9C100CAE9CD /* alarm_gentle.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = alarm_gentle.wav; sourceTree = "<group>"; };
+		3D9D91E62D4AB9C100CAE9CD /* alert_high-intensity.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "alert_high-intensity.wav"; sourceTree = "<group>"; };
+		3D9D91E72D4AB9C100CAE9CD /* ringtone_minimal.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ringtone_minimal.wav; sourceTree = "<group>"; };
+		3D9D91E82D4AB9C100CAE9CD /* notification_simple-02.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "notification_simple-02.wav"; sourceTree = "<group>"; };
+		3D9D91E92D4AB9C100CAE9CD /* notification_simple-01.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "notification_simple-01.wav"; sourceTree = "<group>"; };
+		3D9D91EA2D4AB9C100CAE9CD /* notification_high-intensity.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "notification_high-intensity.wav"; sourceTree = "<group>"; };
+		3D9D91EC2D4AB9C100CAE9CD /* ui_camera-shutter.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "ui_camera-shutter.wav"; sourceTree = "<group>"; };
+		3D9D91ED2D4AB9C100CAE9CD /* navigation_backward-selection-minimal.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "navigation_backward-selection-minimal.wav"; sourceTree = "<group>"; };
+		3D9D91EE2D4AB9C100CAE9CD /* ui_unlock.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ui_unlock.wav; sourceTree = "<group>"; };
+		3D9D91EF2D4AB9C100CAE9CD /* navigation_forward-selection.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "navigation_forward-selection.wav"; sourceTree = "<group>"; };
+		3D9D91F02D4AB9C100CAE9CD /* navigation_backward-selection.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "navigation_backward-selection.wav"; sourceTree = "<group>"; };
+		3D9D91F12D4AB9C100CAE9CD /* ui_lock.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ui_lock.wav; sourceTree = "<group>"; };
+		3D9D91F22D4AB9C100CAE9CD /* state-change_confirm-down.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "state-change_confirm-down.wav"; sourceTree = "<group>"; };
+		3D9D91F32D4AB9C100CAE9CD /* ui_tap-variant-01.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "ui_tap-variant-01.wav"; sourceTree = "<group>"; };
+		3D9D91F42D4AB9C100CAE9CD /* navigation_forward-selection-minimal.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "navigation_forward-selection-minimal.wav"; sourceTree = "<group>"; };
+		3D9D91F52D4AB9C100CAE9CD /* ui_tap-variant-02.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "ui_tap-variant-02.wav"; sourceTree = "<group>"; };
+		3D9D91F62D4AB9C100CAE9CD /* ui_tap-variant-03.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "ui_tap-variant-03.wav"; sourceTree = "<group>"; };
+		3D9D91F72D4AB9C100CAE9CD /* state-change_confirm-up.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "state-change_confirm-up.wav"; sourceTree = "<group>"; };
+		3D9D91F82D4AB9C100CAE9CD /* ui_tap-variant-04.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "ui_tap-variant-04.wav"; sourceTree = "<group>"; };
+		3D9D91F92D4AB9C100CAE9CD /* navigation_selection-complete-celebration.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "navigation_selection-complete-celebration.wav"; sourceTree = "<group>"; };
+		3D9D91FA2D4AB9C100CAE9CD /* navigation_hover-tap.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "navigation_hover-tap.wav"; sourceTree = "<group>"; };
+		3D9D92732D4E8A7300CAE9CD /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +178,8 @@
 			children = (
 				3D93821E2C57031100977CF9 /* SwiftUIBetaApp.swift */,
 				3D9382202C57031100977CF9 /* ContentView.swift */,
+				3D9D92732D4E8A7300CAE9CD /* Settings.bundle */,
+				3D9D91732D4AB9C100CAE9CD /* sounds */,
 				3D9382222C57031A00977CF9 /* Assets.xcassets */,
 				3D9382242C57031A00977CF9 /* Preview Content */,
 			);
@@ -125,6 +209,93 @@
 				3D93823B2C57031B00977CF9 /* SwiftUIBetaUITestsLaunchTests.swift */,
 			);
 			path = SwiftUIBetaUITests;
+			sourceTree = "<group>";
+		};
+		3D9D91732D4AB9C100CAE9CD /* sounds */ = {
+			isa = PBXGroup;
+			children = (
+				3D9D91D22D4AB9C100CAE9CD /* 1.wav */,
+				3D9D91D82D4AB9C100CAE9CD /* 2.wav */,
+				3D9D91D72D4AB9C100CAE9CD /* 3.wav */,
+				3D9D91D12D4AB9C100CAE9CD /* 4.wav */,
+				3D9D91D02D4AB9C100CAE9CD /* 5.wav */,
+				3D9D91CE2D4AB9C100CAE9CD /* wav */,
+			);
+			path = sounds;
+			sourceTree = "<group>";
+		};
+		3D9D91CE2D4AB9C100CAE9CD /* wav */ = {
+			isa = PBXGroup;
+			children = (
+				3D9D91CF2D4AB9C100CAE9CD /* 04 Secondary System Sounds */,
+				3D9D91D92D4AB9C100CAE9CD /* 01 Hero Sounds */,
+				3D9D91E02D4AB9C100CAE9CD /* 02 Alerts and Notifications */,
+				3D9D91EB2D4AB9C100CAE9CD /* 03 Primary System Sounds */,
+			);
+			path = wav;
+			sourceTree = "<group>";
+		};
+		3D9D91CF2D4AB9C100CAE9CD /* 04 Secondary System Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				3D9D91D32D4AB9C100CAE9CD /* navigation_transition-left.wav */,
+				3D9D91D42D4AB9C100CAE9CD /* alert_error-01.wav */,
+				3D9D91D52D4AB9C100CAE9CD /* alert_error-02.wav */,
+				3D9D91D62D4AB9C100CAE9CD /* navigation_unavailable-selection.wav */,
+			);
+			path = "04 Secondary System Sounds";
+			sourceTree = "<group>";
+		};
+		3D9D91D92D4AB9C100CAE9CD /* 01 Hero Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				3D9D91DA2D4AB9C100CAE9CD /* hero_decorative-celebration-03.wav */,
+				3D9D91DB2D4AB9C100CAE9CD /* hero_decorative-celebration-02.wav */,
+				3D9D91DC2D4AB9C100CAE9CD /* hero_decorative-celebration-01.wav */,
+				3D9D91DD2D4AB9C100CAE9CD /* hero_simple-celebration-01.wav */,
+				3D9D91DE2D4AB9C100CAE9CD /* hero_simple-celebration-03.wav */,
+				3D9D91DF2D4AB9C100CAE9CD /* hero_simple-celebration-02.wav */,
+			);
+			path = "01 Hero Sounds";
+			sourceTree = "<group>";
+		};
+		3D9D91E02D4AB9C100CAE9CD /* 02 Alerts and Notifications */ = {
+			isa = PBXGroup;
+			children = (
+				3D9D91E12D4AB9C100CAE9CD /* notification_decorative-02.wav */,
+				3D9D91E22D4AB9C100CAE9CD /* notification_ambient.wav */,
+				3D9D91E32D4AB9C100CAE9CD /* notification_decorative-01.wav */,
+				3D9D91E42D4AB9C100CAE9CD /* alert_simple.wav */,
+				3D9D91E52D4AB9C100CAE9CD /* alarm_gentle.wav */,
+				3D9D91E62D4AB9C100CAE9CD /* alert_high-intensity.wav */,
+				3D9D91E72D4AB9C100CAE9CD /* ringtone_minimal.wav */,
+				3D9D91E82D4AB9C100CAE9CD /* notification_simple-02.wav */,
+				3D9D91E92D4AB9C100CAE9CD /* notification_simple-01.wav */,
+				3D9D91EA2D4AB9C100CAE9CD /* notification_high-intensity.wav */,
+			);
+			path = "02 Alerts and Notifications";
+			sourceTree = "<group>";
+		};
+		3D9D91EB2D4AB9C100CAE9CD /* 03 Primary System Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				3D9D91EC2D4AB9C100CAE9CD /* ui_camera-shutter.wav */,
+				3D9D91ED2D4AB9C100CAE9CD /* navigation_backward-selection-minimal.wav */,
+				3D9D91EE2D4AB9C100CAE9CD /* ui_unlock.wav */,
+				3D9D91EF2D4AB9C100CAE9CD /* navigation_forward-selection.wav */,
+				3D9D91F02D4AB9C100CAE9CD /* navigation_backward-selection.wav */,
+				3D9D91F12D4AB9C100CAE9CD /* ui_lock.wav */,
+				3D9D91F22D4AB9C100CAE9CD /* state-change_confirm-down.wav */,
+				3D9D91F32D4AB9C100CAE9CD /* ui_tap-variant-01.wav */,
+				3D9D91F42D4AB9C100CAE9CD /* navigation_forward-selection-minimal.wav */,
+				3D9D91F52D4AB9C100CAE9CD /* ui_tap-variant-02.wav */,
+				3D9D91F62D4AB9C100CAE9CD /* ui_tap-variant-03.wav */,
+				3D9D91F72D4AB9C100CAE9CD /* state-change_confirm-up.wav */,
+				3D9D91F82D4AB9C100CAE9CD /* ui_tap-variant-04.wav */,
+				3D9D91F92D4AB9C100CAE9CD /* navigation_selection-complete-celebration.wav */,
+				3D9D91FA2D4AB9C100CAE9CD /* navigation_hover-tap.wav */,
+			);
+			path = "03 Primary System Sounds";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -191,7 +362,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1520;
-				LastUpgradeCheck = 1520;
+				LastUpgradeCheck = 2610;
 				TargetAttributes = {
 					3D93821A2C57031000977CF9 = {
 						CreatedOnToolsVersion = 15.2;
@@ -231,8 +402,49 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D9D92652D4AB9C200CAE9CD /* navigation_backward-selection-minimal.wav in Resources */,
+				3D9D92662D4AB9C200CAE9CD /* ui_unlock.wav in Resources */,
+				3D9D92692D4AB9C200CAE9CD /* ui_lock.wav in Resources */,
+				3D9D926D2D4AB9C200CAE9CD /* ui_tap-variant-02.wav in Resources */,
+				3D9D925C2D4AB9C200CAE9CD /* notification_decorative-01.wav in Resources */,
+				3D9D926A2D4AB9C200CAE9CD /* state-change_confirm-down.wav in Resources */,
+				3D9D925D2D4AB9C200CAE9CD /* alert_simple.wav in Resources */,
+				3D9D925E2D4AB9C200CAE9CD /* alarm_gentle.wav in Resources */,
+				3D9D926C2D4AB9C200CAE9CD /* navigation_forward-selection-minimal.wav in Resources */,
+				3D9D92572D4AB9C200CAE9CD /* hero_simple-celebration-01.wav in Resources */,
+				3D9D92712D4AB9C200CAE9CD /* navigation_selection-complete-celebration.wav in Resources */,
 				3D9382262C57031A00977CF9 /* Preview Assets.xcassets in Resources */,
+				3D9D92552D4AB9C200CAE9CD /* hero_decorative-celebration-02.wav in Resources */,
+				3D9D92562D4AB9C200CAE9CD /* hero_decorative-celebration-01.wav in Resources */,
+				3D9D925F2D4AB9C200CAE9CD /* alert_high-intensity.wav in Resources */,
+				3D9D926F2D4AB9C200CAE9CD /* state-change_confirm-up.wav in Resources */,
+				3D9D92702D4AB9C200CAE9CD /* ui_tap-variant-04.wav in Resources */,
+				3D9D92542D4AB9C200CAE9CD /* hero_decorative-celebration-03.wav in Resources */,
+				3D9D92522D4AB9C200CAE9CD /* 3.wav in Resources */,
+				3D9D92582D4AB9C200CAE9CD /* hero_simple-celebration-03.wav in Resources */,
+				3D9D926E2D4AB9C200CAE9CD /* ui_tap-variant-03.wav in Resources */,
+				3D9D924E2D4AB9C200CAE9CD /* navigation_transition-left.wav in Resources */,
+				3D9D925B2D4AB9C200CAE9CD /* notification_ambient.wav in Resources */,
+				3D9D92632D4AB9C200CAE9CD /* notification_high-intensity.wav in Resources */,
+				3D9D92622D4AB9C200CAE9CD /* notification_simple-01.wav in Resources */,
+				3D9D926B2D4AB9C200CAE9CD /* ui_tap-variant-01.wav in Resources */,
+				3D9D92742D4E8A7300CAE9CD /* Settings.bundle in Resources */,
+				3D9D924B2D4AB9C200CAE9CD /* 5.wav in Resources */,
+				3D9D92502D4AB9C200CAE9CD /* alert_error-02.wav in Resources */,
+				3D9D92532D4AB9C200CAE9CD /* 2.wav in Resources */,
+				3D9D924F2D4AB9C200CAE9CD /* alert_error-01.wav in Resources */,
+				3D9D924C2D4AB9C200CAE9CD /* 4.wav in Resources */,
+				3D9D92512D4AB9C200CAE9CD /* navigation_unavailable-selection.wav in Resources */,
+				3D9D92592D4AB9C200CAE9CD /* hero_simple-celebration-02.wav in Resources */,
 				3D9382232C57031A00977CF9 /* Assets.xcassets in Resources */,
+				3D9D92612D4AB9C200CAE9CD /* notification_simple-02.wav in Resources */,
+				3D9D92722D4AB9C200CAE9CD /* navigation_hover-tap.wav in Resources */,
+				3D9D92672D4AB9C200CAE9CD /* navigation_forward-selection.wav in Resources */,
+				3D9D924D2D4AB9C200CAE9CD /* 1.wav in Resources */,
+				3D9D92682D4AB9C200CAE9CD /* navigation_backward-selection.wav in Resources */,
+				3D9D92642D4AB9C200CAE9CD /* ui_camera-shutter.wav in Resources */,
+				3D9D92602D4AB9C200CAE9CD /* ringtone_minimal.wav in Resources */,
+				3D9D925A2D4AB9C200CAE9CD /* notification_decorative-02.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,8 +540,10 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 97F7PGS334;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -353,6 +567,7 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -391,8 +606,10 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 97F7PGS334;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -409,6 +626,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -422,14 +640,15 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUIBeta/Preview Content\"";
-				DEVELOPMENT_TEAM = 97F7PGS334;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Quiero acceder a tu localizacion para mostrarla en un mapa";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -451,14 +670,15 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUIBeta/Preview Content\"";
-				DEVELOPMENT_TEAM = 97F7PGS334;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Quiero acceder a tu localizacion para mostrarla en un mapa";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -475,11 +695,9 @@
 		3D9382432C57031B00977CF9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 97F7PGS334;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				MARKETING_VERSION = 1.0;
@@ -495,11 +713,9 @@
 		3D9382442C57031B00977CF9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 97F7PGS334;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				MARKETING_VERSION = 1.0;
@@ -515,10 +731,8 @@
 		3D9382462C57031B00977CF9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 97F7PGS334;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Dixamo.SwiftUIBetaUITests;
@@ -533,10 +747,8 @@
 		3D9382472C57031B00977CF9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 97F7PGS334;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Dixamo.SwiftUIBetaUITests;
