@@ -1684,33 +1684,35 @@ struct ContentView: View {
         
         /*    TOOLBAR   */
         
-        NavigationStack {
-            List(1..<50) { value in
-                Image(systemName: "globe")
-                    .imageScale(.large)
-                    .foregroundColor(.accentColor)
-                Text("Home")
-            }
-            .toolbar{
-                ToolbarItem {
-                    Button("Primary", action: {})
-                }
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    Button("Trailing", action: {})
-                }
-                ToolbarItem(placement: .navigationBarLeading) {
-                    Button("Leading", action: {})
-                }
-                ToolbarItem(placement: .confirmationAction) {
-                    Button("Confirm", action: {})
-                }
-                ToolbarItem(placement: .principal) {
-                    Button("Principal", action: {})
-                }
-            }
-            .toolbarBackground(.green, for: .navigationBar)
-            .toolbarBackground(.visible, for: .navigationBar)
-        }
+//        NavigationStack {
+//            List(1..<50) { value in
+//                Image(systemName: "globe")
+//                    .imageScale(.large)
+//                    .foregroundColor(.accentColor)
+//                Text("Home")
+//            }
+//            .toolbar{
+//                ToolbarItem {
+//                    Button("Primary", action: {})
+//                }
+//                ToolbarItem(placement: .navigationBarTrailing) {
+//                    Button("Trailing", action: {})
+//                }
+//                ToolbarItem(placement: .navigationBarLeading) {
+//                    Button("Leading", action: {})
+//                }
+//                ToolbarItem(placement: .confirmationAction) {
+//                    Button("Confirm", action: {})
+//                }
+//                ToolbarItem(placement: .principal) {
+//                    Button("Principal", action: {})
+//                }
+//            }
+//            .toolbarBackground(.green, for: .navigationBar)
+//            .toolbarBackground(.visible, for: .navigationBar)
+//        }
+        
+        
         
     }
     
