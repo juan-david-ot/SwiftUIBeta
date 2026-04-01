@@ -237,6 +237,8 @@ struct ContentView: View {
     @State var offsetY = 0.0
     let gradient = Gradient(colors: [Color(red: 40/255, green: 13/255, blue: 88/255), .black])
     
+    @StateObject var scanProvider = ScanProvider()
+    
     func checkHashtags() {
         
         //let regex = try! Regex("#[a-z0-9]+")
@@ -1714,7 +1716,7 @@ struct ContentView: View {
         
         /*       SCANNER       */
         
-        
+        ScanView(scanProvider: scanProvider)
         
     }
     
@@ -1962,8 +1964,15 @@ extension Image: @retroactive Identifiable {
 }
 
 struct ScanView: UIViewControllerRepresentable {
+    @ObservedObject var scanProvider: ScanProvider
+    
     func makeUIViewController(context: Context) -> some DataScannerViewController {
-        <#code#>
+        let dataScannerViewController = DataScannerViewController(recognizedDataTypes: [.text()], qualityLevel: .fast, isHighlightingEnabled: true)
+        
+        dataScannerViewController.delegate = scanProvider
+        try? dataScannerViewController.startScanning()
+        
+        return dataScannerViewController
     }
     
     func updateUIViewController(_ uiViewController: some UIViewController, context: Context) {
@@ -1971,7 +1980,7 @@ struct ScanView: UIViewControllerRepresentable {
     }
 }
 
-final class ScanProvider: NSObject, DataScannerViewControllerDelegate {
+final class ScanProvider: NSObject, DataScannerViewControllerDelegate, ObservableObject {
     @Published var text: String = ""
     @Published var error: DataScannerViewController.ScanningUnavailable?
     
