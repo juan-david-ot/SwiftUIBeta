@@ -1717,6 +1717,29 @@ struct ContentView: View {
         /*       SCANNER       */
         
         ScanView(scanProvider: scanProvider)
+            .sheet(isPresented: $scanProvider.showSheet) {
+                VStack(alignment: .leading) {
+                    HStack {
+                        Spacer()
+                        Button(
+                            action: {
+                                scanProvider.speak()
+                            }
+                        ) {
+                            Label("Play", systemImage: "play.fill")
+                                .padding(.top, 20)
+                                .padding(.trailing, 20)
+                        }
+                    }
+                    Text(scanProvider.text)
+                        .font(.system(.body, design: .rounded))
+                        .padding(.top, 20)
+                        .padding(.horizontal, 20)
+                    Spacer()
+                }
+                .presentationDragIndicator(.visible)
+                .presentationDetents([.medium, .large])
+            }
         
     }
     
@@ -1983,11 +2006,14 @@ struct ScanView: UIViewControllerRepresentable {
 final class ScanProvider: NSObject, DataScannerViewControllerDelegate, ObservableObject {
     @Published var text: String = ""
     @Published var error: DataScannerViewController.ScanningUnavailable?
+    @Published var showSheet: Bool = false
+    let synthesizer = AVSpeechSynthesizer()
     
     func dataScanner(_ dataScanner: DataScannerViewController, didTapOn item: RecognizedItem) {
         switch item {
         case .text(let recognizedText):
             self.text = recognizedText.transcript
+            self.showSheet.toggle()
             print(recognizedText)
         case .barcode(_):
             break
@@ -1999,6 +2025,15 @@ final class ScanProvider: NSObject, DataScannerViewControllerDelegate, Observabl
     func dataScanner(_ dataScanner: DataScannerViewController, becameUnavailableWithError error: DataScannerViewController.ScanningUnavailable) {
         self.error = error
         print(error)
+    }
+    
+    func speak() {
+        let textCopy = text
+        let utterance = AVSpeechUtterance(string: textCopy)
+        utterance.voice = AVSpeechSynthesisVoice(language: "es-ES")
+        
+        synthesizer.pauseSpeaking(at: .word)
+        synthesizer.speak(utterance)
     }
 }
 

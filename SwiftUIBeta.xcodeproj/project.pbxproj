@@ -642,6 +642,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUIBeta/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "La App necesita acceso a la camara para capturar texto en el modulo SCANNER";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Quiero acceder a tu localizacion para mostrarla en un mapa";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -672,6 +673,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUIBeta/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "La App necesita acceso a la camara para capturar texto en el modulo SCANNER";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Quiero acceder a tu localizacion para mostrarla en un mapa";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
