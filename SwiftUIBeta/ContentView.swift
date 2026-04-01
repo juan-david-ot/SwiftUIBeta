@@ -12,7 +12,7 @@ import CoreLocation
 import RegexBuilder
 import PhotosUI
 import Charts
-
+import VisionKit
 
 struct Device {
     let title: String
@@ -1712,6 +1712,8 @@ struct ContentView: View {
 //            .toolbarBackground(.visible, for: .navigationBar)
 //        }
         
+        /*       SCANNER       */
+        
         
         
     }
@@ -1957,6 +1959,38 @@ extension LocationViewModel: CLLocationManagerDelegate {
 
 extension Image: @retroactive Identifiable {
     public var id: String { UUID().uuidString }
+}
+
+struct ScanView: UIViewControllerRepresentable {
+    func makeUIViewController(context: Context) -> some DataScannerViewController {
+        <#code#>
+    }
+    
+    func updateUIViewController(_ uiViewController: some UIViewController, context: Context) {
+        
+    }
+}
+
+final class ScanProvider: NSObject, DataScannerViewControllerDelegate {
+    @Published var text: String = ""
+    @Published var error: DataScannerViewController.ScanningUnavailable?
+    
+    func dataScanner(_ dataScanner: DataScannerViewController, didTapOn item: RecognizedItem) {
+        switch item {
+        case .text(let recognizedText):
+            self.text = recognizedText.transcript
+            print(recognizedText)
+        case .barcode(_):
+            break
+        @unknown default:
+            break
+        }
+    }
+    
+    func dataScanner(_ dataScanner: DataScannerViewController, becameUnavailableWithError error: DataScannerViewController.ScanningUnavailable) {
+        self.error = error
+        print(error)
+    }
 }
 
 #Preview {
