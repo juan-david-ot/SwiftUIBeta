@@ -1715,30 +1715,30 @@ struct ContentView: View {
         
         /*       SCANNER       */
         
-        ScanView(scanProvider: scanProvider)
-            .sheet(isPresented: $scanProvider.showSheet) {
-                VStack(alignment: .leading) {
-                    HStack {
-                        Spacer()
-                        Button(
-                            action: {
-                                scanProvider.speak()
-                            }
-                        ) {
-                            Label("Play", systemImage: "play.fill")
-                                .padding(.top, 20)
-                                .padding(.trailing, 20)
-                        }
-                    }
-                    Text(scanProvider.text)
-                        .font(.system(.body, design: .rounded))
-                        .padding(.top, 20)
-                        .padding(.horizontal, 20)
-                    Spacer()
-                }
-                .presentationDragIndicator(.visible)
-                .presentationDetents([.medium, .large])
-            }
+//        ScanView(scanProvider: scanProvider)
+//            .sheet(isPresented: $scanProvider.showSheet) {
+//                VStack(alignment: .leading) {
+//                    HStack {
+//                        Spacer()
+//                        Button(
+//                            action: {
+//                                scanProvider.speak()
+//                            }
+//                        ) {
+//                            Label("Play", systemImage: "play.fill")
+//                                .padding(.top, 20)
+//                                .padding(.trailing, 20)
+//                        }
+//                    }
+//                    Text(scanProvider.text)
+//                        .font(.system(.body, design: .rounded))
+//                        .padding(.top, 20)
+//                        .padding(.horizontal, 20)
+//                    Spacer()
+//                }
+//                .presentationDragIndicator(.visible)
+//                .presentationDetents([.medium, .large])
+//            }
         
     }
     
