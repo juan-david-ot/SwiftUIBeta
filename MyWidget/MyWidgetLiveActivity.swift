@@ -14,35 +14,63 @@ struct MyWidgetLiveActivity: Widget {
     var body: some WidgetConfiguration {
         ActivityConfiguration(for: DeliveryAttributes.self) { context in
             // Lock screen/banner UI goes here
-            VStack {
-                Text("Hello ")
+            HStack {
+                Image(systemName: "box.truck.badge.clock.fill")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 40, height: 40)
+                    .foregroundColor(.indigo)
+                    .padding()
+                VStack(alignment: .leading) {
+                    Text("\(context.state.productName) está \(context.state.deliveryStatus.rawValue)")
+                }
+                Spacer()
+                VStack(alignment: .center) {
+                    Text("Hora de entrega")
+                    Text(context.state.estimatedArrivalDate)
+                        .bold()
+                }
             }
-            .activityBackgroundTint(Color.cyan)
-            .activitySystemActionForegroundColor(Color.black)
+            .activityBackgroundTint(.black)
+            .activitySystemActionForegroundColor(.white)
 
         } dynamicIsland: { context in
             DynamicIsland {
-                // Expanded UI goes here.  Compose the expanded UI through
-                // various regions, like leading/trailing/center/bottom
                 DynamicIslandExpandedRegion(.leading) {
-                    Text("Leading")
+                    Image(systemName: "box.truck.badge.clock.fill")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 20, height: 20)
+                        .padding(.leading, 12)
                 }
                 DynamicIslandExpandedRegion(.trailing) {
-                    Text("Trailing")
+                    Text(context.state.productName)
+                        .bold()
+                        .multilineTextAlignment(.center)
+                }
+                DynamicIslandExpandedRegion(.center) {
+                    Text("Paquete: \(context.state.deliveryStatus.rawValue)")
                 }
                 DynamicIslandExpandedRegion(.bottom) {
-                    Text("Bottom ")
-                    // more content
+                    Button(action: {}) {
+                        Label("Cancelar", systemImage: "xmark.circle.fill")
+                    }
                 }
             } compactLeading: {
-                Text("L")
+                    Image(systemName: "box.truck.badge.clock.fill")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 20, height: 20)
+                
             } compactTrailing: {
-                Text("T ")
+                Text(context.state.deliveryStatus.rawValue)
             } minimal: {
-                Text("context.state.emoji")
+                Image(systemName: "box.truck.badge.clock.fill")
+                    .resizable()
+                    .scaledToFit()
+                    .foregroundColor(.green)
             }
-            .widgetURL(URL(string: "http://www.apple.com"))
-            .keylineTint(Color.red)
+
         }
     }
 }

@@ -184,12 +184,27 @@ final class DeliveryActivityUseCase {
         
         do{
             let activity = try Activity.request(attributes: attributes, content: activityContent)
-            
+
             return activity.id
         }
         catch {
             throw error
         }
+    }
+    
+    static func updateActivity(activityId: String, newDeliveryStatus: DeliveryStatus, productName: String, estimatedArrivalDate: String) async {
+        let updatedContentState = DeliveryAttributes.ContentState(deliveryStatus: newDeliveryStatus, productName: productName, estimatedArrivalDate: estimatedArrivalDate)
+        
+        let activity = Activity<DeliveryAttributes>.activities.first(where: { $0.id == activityId })
+        let activityContent = ActivityContent(state: updatedContentState, staleDate: .now + 3600)
+        
+        await activity?.update(activityContent)
+    }
+    
+    static func endActivity(activityId: String) async {
+        let activity = Activity<DeliveryAttributes>.activities.first(where: { $0.id == activityId })
+
+        await activity?.end(nil, dismissalPolicy: .immediate)
     }
 }
 
@@ -280,7 +295,7 @@ struct ContentView: View {
     
     @State var productName: String = "MacBook Pro 1900€"
     @State var currentDeliveryState: DeliveryStatus = .none
-    @State var activityIdentifier: String = ""
+    @State var activityId: String = ""
     
     func checkHashtags() {
         
@@ -355,10 +370,25 @@ struct ContentView: View {
         currentDeliveryState = .sent
         
         do {
-            activityIdentifier = try DeliveryActivityUseCase.startActivity(deliveryStatus: currentDeliveryState, productName: productName, estimatedArrivalDate: "21:00")
+            activityId = try DeliveryActivityUseCase.startActivity(deliveryStatus: currentDeliveryState, productName: productName, estimatedArrivalDate: "21:00")
         }
         catch {
             print(error.localizedDescription)
+        }
+    }
+    
+    func changeState() {
+        currentDeliveryState = .inTransit
+        
+        Task {
+            await DeliveryActivityUseCase.updateActivity(activityId: activityId, newDeliveryStatus: currentDeliveryState, productName: productName, estimatedArrivalDate: "21:00")
+        }
+    }
+    
+    func removeState() {
+        currentDeliveryState = .delivered
+        Task {
+            await DeliveryActivityUseCase.endActivity(activityId: activityId)
         }
     }
     
@@ -1824,7 +1854,16 @@ struct ContentView: View {
             .padding(.top, 32)
             
             Button(action: {
-                
+                changeState()
+            }) {
+                Label("Actualizar", systemImage: "arrow.trianglehead.clockwise")
+            }
+            .buttonStyle(.borderedProminent)
+            .padding(.top, 32)
+            .tint(.indigo)
+            
+            Button(action: {
+                removeState()
             }) {
                 Label("Limpiar", systemImage: "paintbrush.fill")
             }
