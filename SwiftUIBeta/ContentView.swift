@@ -876,59 +876,59 @@ struct ContentView: View {
 //                            offset = value.translation
 //                        }
 //                    })
-//                            .onEnded({ value in
-//                                withAnimation(.spring) {
-//                                    offset = .zero
-//                                }
-//                            })
-//                    )
+//                    .onEnded({ value in
+//                        withAnimation(.spring) {
+//                            offset = .zero
+//                        }
+//                    })
+//            )
         
         /*      STATE/BINDING     */
         
-//                CounterView(counter: $counter)
+//        CounterView(counter: $counter)
         
         /*      STATEOBJECT       */
         
-//                CounterView(counter: $counter)
-//                ListVideosView(contentViewModel: contentViewModel)
-//                Spacer()
+//        CounterView(counter: $counter)
+//        ListVideosView(contentViewModel: contentViewModel)
+//        Spacer()
         
         /*      ENVIROMENTOBJECT    */
         
-//                VStack {
-//                    Text("Contador: \(viewModel.counter)")
-//                        .bold()
-//                        .font(.largeTitle)
-//                    Text("Vista 1")
-//                        .padding()
-//                    View2()
-//                }
-//                .environmentObject(viewModel)
+//        VStack {
+//            Text("Contador: \(viewModel.counter)")
+//                .bold()
+//                .font(.largeTitle)
+//            Text("Vista 1")
+//                .padding()
+//            View2()
+//        }
+//        .environmentObject(viewModel)
         
         /*       APPSTORAGE        */
         
-//                Form {
-//                    TextField("Username", text: $username)
-//                    HStack {
-//                        Spacer()
-//                        Button("Guardar") {
-//                            appStorageName = username
-//                        }
-//                        .padding()
-//                        Spacer()
-//                    }
-//                    HStack {
-//                        Spacer()
-//                        Button("Mostrar") {
-//                            print(UserDefaults.standard.string(forKey: "appStorageName"))
-//                        }
-//                        .padding()
-//                        Spacer()
-//                    }
+//        Form {
+//            TextField("Username", text: $username)
+//            HStack {
+//                Spacer()
+//                Button("Guardar") {
+//                    appStorageName = username
 //                }
-//                .onAppear{
-//                    username = appStorageName
+//                .padding()
+//                Spacer()
+//            }
+//            HStack {
+//                Spacer()
+//                Button("Mostrar") {
+//                    print(UserDefaults.standard.string(forKey: "appStorageName"))
 //                }
+//                .padding()
+//                Spacer()
+//            }
+//        }
+//        .onAppear{
+//            username = appStorageName
+//        }
         
         /*      SCENESTORAGE       */
         
@@ -1636,7 +1636,6 @@ struct ContentView: View {
 //                    }
 //                }
 //            }
-        
 //        ZStack {
 //            RoundedRectangle(cornerRadius: 4)
 //                .fill(.blue)
