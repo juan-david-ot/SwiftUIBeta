@@ -154,6 +154,13 @@ var viewsAverage: Double {
     return Double(totalViews / youtubeVideoModel.count)
 }
 
+enum DeliveryStatus: String, Codable {
+    case none = ""
+    case sent = "Enviado"
+    case inTransit = "En reparto"
+    case delivered = "Entregado"
+}
+
 struct ContentView: View {
     
     @AppStorage("appStorageName") var appStorageName: String = ""
@@ -238,6 +245,10 @@ struct ContentView: View {
     let gradient = Gradient(colors: [Color(red: 40/255, green: 13/255, blue: 88/255), .black])
     
     @StateObject var scanProvider = ScanProvider()
+    
+    @State var productName: String = "MacBook Pro 1900€"
+    @State var currentDeliveryState: DeliveryStatus = .none
+    @State var activityIdentifier: String = ""
     
     func checkHashtags() {
         
@@ -1739,6 +1750,47 @@ struct ContentView: View {
 //                .presentationDragIndicator(.visible)
 //                .presentationDetents([.medium, .large])
 //            }
+        
+        
+        /*      DYNAMIC ISLAND      */
+        
+        VStack {
+            Spacer()
+            
+            Text("¡Compra tu MacBook Pro!")
+                .font(.system(size: 28, weight: .bold))
+                .padding(.bottom, 32)
+            
+            Image(systemName: "macbook")
+                .resizable()
+                .scaledToFit()
+                .frame(width: 200, height: 200)
+            
+            Text(productName)
+                .font(.system(.largeTitle))
+            
+            Text(currentDeliveryState.rawValue)
+                .font(.system(.body))
+            
+            Button(action: {
+                    
+            }) {
+                Label("Comprar", systemImage: "cart.fill")
+            }
+            .buttonStyle(.borderedProminent)
+            .padding(.top, 32)
+            
+            Button(action: {
+                
+            }) {
+                Label("Limpiar", systemImage: "paintbrush.fill")
+            }
+            .buttonStyle(.borderedProminent)
+            .padding(.top, 32)
+            .tint(.green)
+            
+            Spacer()
+        }
         
     }
     
