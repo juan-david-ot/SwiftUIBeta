@@ -6,6 +6,8 @@
 //
 
 import SwiftUI
+import Foundation
+import Combine
 import AVKit
 import MapKit
 import CoreLocation
@@ -13,6 +15,7 @@ import RegexBuilder
 import PhotosUI
 import Charts
 import VisionKit
+import ActivityKit
 
 struct Device {
     let title: String
@@ -159,6 +162,35 @@ enum DeliveryStatus: String, Codable {
     case sent = "Enviado"
     case inTransit = "En reparto"
     case delivered = "Entregado"
+}
+
+struct DeliveryAttributes: ActivityAttributes {
+    public struct ContentState: Codable, Hashable {
+        var deliveryStatus: DeliveryStatus
+        var productName: String
+        var estimatedArrivalDate: String
+    }
+}
+
+final class DeliveryActivityUseCase {
+    static func startActivity(deliveryStatus: DeliveryStatus, productName: String, estimatedArrivalDate: String) throws -> String {
+        guard ActivityAuthorizationInfo().areActivitiesEnabled else { return "" }
+        let initialState = DeliveryAttributes.ContentState(deliveryStatus: deliveryStatus, productName: productName, estimatedArrivalDate: estimatedArrivalDate)
+        
+        let clearDate: Date = .now + 3600
+        let activityContent = ActivityContent(state: initialState, staleDate: clearDate)
+        
+        let attributes = DeliveryAttributes()
+        
+        do{
+            let activity = try Activity.request(attributes: attributes, content: activityContent)
+            
+            return activity.id
+        }
+        catch {
+            throw error
+        }
+    }
 }
 
 struct ContentView: View {
@@ -317,6 +349,17 @@ struct ContentView: View {
             }
         }
         
+    }
+    
+    func buyProduct() {
+        currentDeliveryState = .sent
+        
+        do {
+            activityIdentifier = try DeliveryActivityUseCase.startActivity(deliveryStatus: currentDeliveryState, productName: productName, estimatedArrivalDate: "21:00")
+        }
+        catch {
+            print(error.localizedDescription)
+        }
     }
     
     var body: some View {
@@ -1773,7 +1816,7 @@ struct ContentView: View {
                 .font(.system(.body))
             
             Button(action: {
-                    
+                buyProduct()
             }) {
                 Label("Comprar", systemImage: "cart.fill")
             }
